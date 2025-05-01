@@ -712,6 +712,11 @@
       "name": "DragonColor",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "AttSpeed",
+      "type": "number",
+      "value": 1.25
     }
   ],
   "layouts": [
@@ -2885,6 +2890,15 @@
               "parameters": [
                 "",
                 "GlobalScore"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::DisableVariableSynchronization"
+              },
+              "parameters": [
+                "",
+                "AttSpeed"
               ]
             }
           ]
@@ -5466,7 +5480,7 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Joystick Layer",
           "name": "NewText",
           "persistentUuid": "840e1861-5ea6-42b9-a013-4b894eace469",
           "width": 0,
@@ -6814,7 +6828,6 @@
       },
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6826,7 +6839,17 @@
               ]
             }
           ],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"AttCD\""
+              ]
+            }
+          ],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -7257,6 +7280,17 @@
                 "=",
                 "ToDeg(atan2(Dragons.MoveY,Dragons.MoveX))"
               ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "NewText",
+                "Text",
+                "=",
+                "ToString(TimerElapsedTime(\"AttCD\"))"
+              ]
             }
           ]
         },
@@ -7353,6 +7387,17 @@
                 "",
                 "\"Left\""
               ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"AttCD\"",
+                ">=",
+                "AttSpeed"
+              ]
             }
           ],
           "actions": [
@@ -7422,6 +7467,15 @@
                 "Dragons.MoveAngle",
                 "400",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"AttCD\""
               ]
             }
           ]
@@ -7495,11 +7549,18 @@
                 "value": "Multiplayer::LeaveGameLobby"
               },
               "parameters": []
+            },
+            {
+              "type": {
+                "value": "Multiplayer::EndLobbyGame"
+              },
+              "parameters": []
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Dragons",
           "conditions": [
             {
               "type": {
@@ -7512,9 +7573,59 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Multiplayer::MultiplayerObjectBehavior::IsObjectOwnedByCurrentPlayer"
+              },
+              "parameters": [
+                "Dragons",
+                "MultiplayerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::IsObjectOwnedByCurrentPlayer"
+              },
+              "parameters": [
+                "Bullet",
+                "MultiplayerObject"
+              ]
             }
           ],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Bullet",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "NewText",
+                "Text",
+                "=",
+                "\"Tatol Score: \" + GlobalScore"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "GlobalScore",
+                "+",
+                "1"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
