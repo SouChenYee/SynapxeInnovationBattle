@@ -2859,6 +2859,33 @@
                 "=",
                 "DragonNameInput.Text::Value()"
               ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::DisableVariableSynchronization"
+              },
+              "parameters": [
+                "",
+                "DragonColor"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::DisableVariableSynchronization"
+              },
+              "parameters": [
+                "",
+                "DragonName"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::DisableVariableSynchronization"
+              },
+              "parameters": [
+                "",
+                "GlobalScore"
+              ]
             }
           ]
         },
@@ -3521,7 +3548,7 @@
                 "5bf6889c0b81a767e32df186cf8b43e85b322048528a39cdc33512c30b5336e5_26 - super scary cave dragon.aac",
                 "11",
                 "yes",
-                "",
+                "0",
                 ""
               ]
             }
@@ -4540,7 +4567,7 @@
                 "WelcomeText",
                 "Text",
                 "=",
-                "\"Welcome \" + DragonName"
+                "\"Welcome \" + DragonName + NewLine() +\n\"Total Score: \" + GlobalScore"
               ]
             }
           ]
@@ -5317,7 +5344,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3925161175488224,
+        "zoomFactor": 0.27253598967729314,
         "windowMask": false
       },
       "objectsGroups": [
@@ -5424,11 +5451,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "Joystick Layer",
-          "name": "NewText",
-          "persistentUuid": "d7646424-f256-4acf-a370-eb1849a9d38d",
+          "name": "LeftArrow",
+          "persistentUuid": "7ddf65f2-69ea-49e9-b8da-956820d28d5b",
           "width": 0,
-          "x": 566,
-          "y": 130,
+          "x": 599,
+          "y": 547,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -5440,11 +5467,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "LeftArrow",
-          "persistentUuid": "54637605-3559-45bd-87ba-028f234b976a",
+          "name": "NewText",
+          "persistentUuid": "840e1861-5ea6-42b9-a013-4b894eace469",
           "width": 0,
-          "x": 19,
-          "y": 189,
+          "x": 41,
+          "y": 224,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -5533,6 +5560,17 @@
               "name": "MoveAngle",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "Name",
+              "persistentUuid": "27269c92-2f38-4648-814d-bad5fb670ccf",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Color",
+              "type": "string",
+              "value": ""
             }
           ],
           "effects": [],
@@ -6484,6 +6522,16 @@
               "name": "MoveAngle",
               "type": "number",
               "value": 0
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "Color",
+              "type": "string",
+              "value": ""
             }
           ],
           "effects": [],
@@ -6496,90 +6544,6 @@
             }
           ],
           "animations": [
-            {
-              "name": "White",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.3,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "FlyingWhiteWingUp3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 27,
-                            "y": 73
-                          },
-                          {
-                            "x": 997,
-                            "y": 73
-                          },
-                          {
-                            "x": 997,
-                            "y": 961
-                          },
-                          {
-                            "x": 27,
-                            "y": 961
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "FlyingWhiteWingUpDown4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 27,
-                            "y": 73
-                          },
-                          {
-                            "x": 997,
-                            "y": 73
-                          },
-                          {
-                            "x": 997,
-                            "y": 961
-                          },
-                          {
-                            "x": 27,
-                            "y": 961
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
             {
               "name": "Black",
               "useMultipleDirections": false,
@@ -6606,20 +6570,104 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 27,
-                            "y": 73
+                            "x": 25,
+                            "y": 63
                           },
                           {
-                            "x": 997,
-                            "y": 73
+                            "x": 999,
+                            "y": 63
                           },
                           {
-                            "x": 997,
-                            "y": 961
+                            "x": 999,
+                            "y": 923
                           },
                           {
-                            "x": 27,
-                            "y": 961
+                            "x": 25,
+                            "y": 923
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "White",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.3,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "FlyingWhiteWingUp3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 25,
+                            "y": 63
+                          },
+                          {
+                            "x": 999,
+                            "y": 63
+                          },
+                          {
+                            "x": 999,
+                            "y": 923
+                          },
+                          {
+                            "x": 25,
+                            "y": 923
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "FlyingWhiteWingUpDown4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 25,
+                            "y": 63
+                          },
+                          {
+                            "x": 999,
+                            "y": 63
+                          },
+                          {
+                            "x": 999,
+                            "y": 923
+                          },
+                          {
+                            "x": 25,
+                            "y": 923
                           }
                         ]
                       ]
@@ -7079,6 +7127,44 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Multiplayer::MultiplayerObjectBehavior::IsObjectOwnedByCurrentPlayer"
+                  },
+                  "parameters": [
+                    "Dragons",
+                    "MultiplayerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "Dragons",
+                    "Color",
+                    "=",
+                    "DragonColor"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringObjectVariable"
+                  },
+                  "parameters": [
+                    "Dragons",
+                    "Name",
+                    "=",
+                    "DragonName"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -7145,20 +7231,31 @@
               },
               "parameters": [
                 "Dragons",
-                "MoveAngle",
+                "MoveY",
                 "=",
-                "ToDeg(atan2(Dragons.MoveY,MainDragon.MoveX))"
+                "Joystick.StickForceY()"
               ]
             },
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                "value": "SetNumberObjectVariable"
               },
               "parameters": [
-                "NewText",
-                "Text",
+                "Dragons",
+                "MoveX",
                 "=",
-                "DragonColor + \"-\" + DragonName"
+                "Joystick.StickForceX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Dragons",
+                "MoveAngle",
+                "=",
+                "ToDeg(atan2(Dragons.MoveY,Dragons.MoveX))"
               ]
             }
           ]
@@ -7211,28 +7308,6 @@
                 "clamp(Dragons.X(), 0 + Dragons.Width()/2 - 500, 2280 - Dragons.Width()/2 - 500)",
                 "=",
                 "clamp(Dragons.Y(), 0 - 780 + Dragons.Height()/2, 2280 - 780 - Dragons.Height()/2)"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "Dragons",
-                "MoveX",
-                "=",
-                "Joystick.StickForceX()"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "Dragons",
-                "MoveY",
-                "=",
-                "Joystick.StickForceY()"
               ]
             },
             {
@@ -7306,6 +7381,15 @@
                 "Dragons.X()",
                 "Dragons.Y()",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+              },
+              "parameters": [
+                "Bullet",
+                "MultiplayerObject"
               ]
             },
             {
@@ -7413,6 +7497,24 @@
               "parameters": []
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Bullet",
+                "Dragons",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": []
         }
       ],
       "layers": [
