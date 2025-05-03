@@ -9770,6 +9770,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Bullet",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -10303,6 +10304,31 @@
                     "value": "PopScene"
                   },
                   "parameters": [
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Multiplayer::PlayersInLobbyCount"
+                  },
+                  "parameters": [
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "PopupElements",
                     ""
                   ]
                 }
