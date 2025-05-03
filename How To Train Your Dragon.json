@@ -5440,7 +5440,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6040838749988878,
+        "zoomFactor": 0.25504554733543444,
         "windowMask": false
       },
       "objectsGroups": [
@@ -5482,6 +5482,16 @@
           "name": "MapFull",
           "type": "number",
           "value": 2280
+        },
+        {
+          "name": "ream",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "remain_time",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -5628,6 +5638,22 @@
           "x": 824,
           "y": 573,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TimerText",
+          "persistentUuid": "428ba747-40cc-4693-84c1-c3466f9d12a0",
+          "width": 0,
+          "x": 1068,
+          "y": 74,
+          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7208,6 +7234,48 @@
               "width": 192
             }
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TimerText",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "Poppins-Medium.ttf",
+          "textAlignment": "left",
+          "characterSize": 60,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "74;74;74",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Text",
+            "font": "Poppins-Medium.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 60,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -7227,6 +7295,9 @@
           },
           {
             "objectName": "Joystick"
+          },
+          {
+            "objectName": "TimerText"
           },
           {
             "objectName": "AttButton"
@@ -8172,6 +8243,58 @@
                 "=",
                 "ToNumber(Multiplayer::MessageData(\"HP_\" + ToString(HealthBars.MultiplayerObject::PlayerObjectOwnership())))",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Timer"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Time Limit\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "remain_time",
+                "=",
+                "60-TimerElapsedTime(\"Time Limit\")"
               ]
             }
           ]
