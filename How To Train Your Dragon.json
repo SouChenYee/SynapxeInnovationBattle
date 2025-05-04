@@ -862,6 +862,66 @@
         "name": "Gold",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Flat Bar Blue Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar Blue Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/f270f84b907c4d653ca7fad99ab890b31642bdbc0b22a189ff45be51240cf52b_Flat Bar Blue Fill Bar.png",
+          "name": "Flat Bar Blue Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Flat Bar White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar White Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
+          "name": "Flat Bar White Border.png"
+        }
+      },
+      {
+        "file": "assets/Shaded Blue Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Shaded Blue Fill Bar.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/efb17aade7ab227ae611ea6c681413bedfaecd4b661b793675b1dd59ca941d2e_Shaded Blue Fill Bar.png",
+          "name": "Shaded Blue Fill Bar.png"
+        }
+      },
+      {
+        "file": "assets/Wood Bar Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wood Bar Border.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/5c3135f6fa8587da82ddea950881fc8b35d422bb806d9331f8b47fdc715ee76a_Wood Bar Border.png",
+          "name": "Wood Bar Border.png"
+        }
+      },
+      {
+        "file": "assets/Flat Bar Orange Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar Orange Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/e277b4eaf6ac17fafedb222c2900b817f1fe3018b42a46430d530f0df8d42b60_Flat Bar Orange Fill Bar.png",
+          "name": "Flat Bar Orange Fill Bar.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -901,6 +961,11 @@
       "name": "Game1Countdown",
       "type": "number",
       "value": 300
+    },
+    {
+      "name": "MaxLevel",
+      "type": "number",
+      "value": 5
     }
   ],
   "layouts": [
@@ -5653,7 +5718,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.0973679695629526,
+        "zoomFactor": 0.8416428125373143,
         "windowMask": false
       },
       "objectsGroups": [
@@ -5741,6 +5806,23 @@
               "name": "MainDragon4_mini"
             }
           ]
+        },
+        {
+          "name": "DragonLvls",
+          "objects": [
+            {
+              "name": "DragonLvl1"
+            },
+            {
+              "name": "DragonLvl2"
+            },
+            {
+              "name": "DragonLvl3"
+            },
+            {
+              "name": "DragonLvl4"
+            }
+          ]
         }
       ],
       "variables": [
@@ -5773,6 +5855,11 @@
           "name": "GameEnd",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "CurrentLvl",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -5836,8 +5923,8 @@
           "name": "MainDragon1",
           "persistentUuid": "c4504b0f-be85-4546-b47c-8a41a0355c02",
           "width": 128,
-          "x": -319,
-          "y": -559,
+          "x": -196,
+          "y": -642,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -5870,8 +5957,8 @@
           "name": "CopperRedBar1",
           "persistentUuid": "ee083330-8b52-4b41-bcfc-786e182385e7",
           "width": 96,
-          "x": -295,
-          "y": -579,
+          "x": -168,
+          "y": -662,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -5968,8 +6055,8 @@
           "name": "DragonName1",
           "persistentUuid": "bd5d9cdc-4633-40dd-b15e-1f956b03bbb5",
           "width": 0,
-          "x": -320,
-          "y": -612,
+          "x": -197,
+          "y": -695,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -6183,6 +6270,103 @@
           "x": 95,
           "y": 92,
           "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "MiniMap",
+          "name": "BlueFlatBar1",
+          "persistentUuid": "b887a27b-455c-4ec5-8976-80a0aa91e3cd",
+          "width": 0,
+          "x": 1337,
+          "y": -425,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 25,
+          "keepRatio": true,
+          "layer": "Joystick Layer",
+          "name": "GoldGreenExpBar",
+          "persistentUuid": "da9d4013-54a2-4407-b9f9-c8020a12799c",
+          "width": 673,
+          "x": 341,
+          "y": 612,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0.9999999999999997,
+          "height": 30,
+          "layer": "",
+          "name": "DragonLvl1",
+          "persistentUuid": "c33477f2-fe97-457b-998f-55c3c68f6825",
+          "width": 20,
+          "x": -193,
+          "y": -673,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "DragonLvl2",
+          "persistentUuid": "5ca72bf4-64f5-4df0-a6e1-57d1ea9ae283",
+          "width": 0,
+          "x": 1454,
+          "y": -600,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "DragonLvl3",
+          "persistentUuid": "43793b29-3a7b-489a-83b7-9c9d80c74a17",
+          "width": 0,
+          "x": 1531,
+          "y": 1209,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "DragonLvl4",
+          "persistentUuid": "71a7a19e-794a-476a-9211-e3390b2381fe",
+          "width": 0,
+          "x": -363,
+          "y": 1199,
+          "zOrder": 40,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10338,11 +10522,215 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "060d3cb5faaf66f8306eb39a767ab608417fe366bc66f8444ccc0efcbabb78c8",
+          "name": "GoldGreenExpBar",
+          "type": "PanelSpriteContinuousBar::PanelSpriteContinuousBar",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "ShowLabel": false,
+            "PreviousHighValueDuration": 1,
+            "BarTopPadding": 4,
+            "BarLeftPadding": 25,
+            "BarRightPadding": 25,
+            "BarBottomPadding": 5,
+            "InitialValue": 0,
+            "MaxValue": 10,
+            "EasingDuration": 0
+          },
+          "childrenContent": {
+            "Background": {
+              "bottomMargin": 4,
+              "height": 25,
+              "leftMargin": 24,
+              "rightMargin": 25,
+              "texture": "Gold bar background.png",
+              "tiled": true,
+              "topMargin": 3,
+              "width": 113
+            },
+            "Buffer": {
+              "bottomMargin": 0,
+              "height": 16,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "Dark LCD Bar Fill.png",
+              "tiled": true,
+              "topMargin": 0,
+              "width": 16
+            },
+            "FillBar": {
+              "bottomMargin": 0,
+              "height": 16,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "Green LCD Bar Fill.png",
+              "tiled": true,
+              "topMargin": 0,
+              "width": 16
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "",
+              "textAlignment": "",
+              "characterSize": 20,
+              "color": {
+                "b": 0,
+                "g": 0,
+                "r": 0
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": false,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "",
+                "font": "",
+                "textAlignment": "",
+                "verticalTextAlignment": "top",
+                "characterSize": 20,
+                "color": "0;0;0"
+              }
+            }
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "DragonLvl1",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "MultiplayerObject",
+              "type": "Multiplayer::MultiplayerObjectBehavior",
+              "playerNumber": 1,
+              "actionOnPlayerDisconnect": "DestroyObject"
+            }
+          ],
+          "content": {
+            "text": "[b][outline=red]0[/outline][/b]",
+            "opacity": 255,
+            "fontSize": 20,
+            "visible": true,
+            "color": "255;255;255",
+            "fontFamily": "Arial",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "DragonLvl2",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "MultiplayerObject",
+              "type": "Multiplayer::MultiplayerObjectBehavior",
+              "playerNumber": 2,
+              "actionOnPlayerDisconnect": "DestroyObject"
+            }
+          ],
+          "content": {
+            "text": "[b][outline=red]0[/outline][/b]",
+            "opacity": 255,
+            "fontSize": 20,
+            "visible": true,
+            "color": "255;255;255",
+            "fontFamily": "Arial",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "DragonLvl3",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "MultiplayerObject",
+              "type": "Multiplayer::MultiplayerObjectBehavior",
+              "playerNumber": 3,
+              "actionOnPlayerDisconnect": "DestroyObject"
+            }
+          ],
+          "content": {
+            "text": "[b][outline=red]0[/outline][/b]",
+            "opacity": 255,
+            "fontSize": 20,
+            "visible": true,
+            "color": "255;255;255",
+            "fontFamily": "Arial",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "DragonLvl4",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "MultiplayerObject",
+              "type": "Multiplayer::MultiplayerObjectBehavior",
+              "playerNumber": 4,
+              "actionOnPlayerDisconnect": "DestroyObject"
+            }
+          ],
+          "content": {
+            "text": "[b][outline=red]0[/outline][/b]",
+            "opacity": 255,
+            "fontSize": 20,
+            "visible": true,
+            "color": "255;255;255",
+            "fontFamily": "Arial",
+            "align": "center",
+            "wordWrap": true
+          }
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
+          {
+            "folderName": "MiniDragons",
+            "children": [
+              {
+                "objectName": "MainDragon4_mini"
+              },
+              {
+                "objectName": "MainDragon3_mini"
+              },
+              {
+                "objectName": "MainDragon2_mini"
+              },
+              {
+                "objectName": "MainDragon1_mini"
+              }
+            ]
+          },
           {
             "folderName": "Dragons",
             "children": [
@@ -10440,16 +10828,19 @@
             "objectName": "MiniMapBG"
           },
           {
-            "objectName": "MainDragon1_mini"
+            "objectName": "GoldGreenExpBar"
           },
           {
-            "objectName": "MainDragon2_mini"
+            "objectName": "DragonLvl1"
           },
           {
-            "objectName": "MainDragon3_mini"
+            "objectName": "DragonLvl2"
           },
           {
-            "objectName": "MainDragon4_mini"
+            "objectName": "DragonLvl3"
+          },
+          {
+            "objectName": "DragonLvl4"
           }
         ]
       },
@@ -10615,10 +11006,20 @@
                 "",
                 "DamagePoint"
               ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::DisableVariableSynchronization"
+              },
+              "parameters": [
+                "",
+                "CurrentLvl"
+              ]
             }
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -10658,315 +11059,19 @@
                 "=",
                 "Game1Countdown"
               ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "GoldGreenExpBar",
+                "=",
+                "ScreenWidth()/2"
+              ]
             }
           ],
           "events": [
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "DragonColor",
-                    "=",
-                    "\"Black\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Dragons",
-                    "Animation",
-                    "=",
-                    "\"Black\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "AttButton",
-                    "Animation",
-                    "=",
-                    "\"Black\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Bullet",
-                    "Animation",
-                    "=",
-                    "\"Black\""
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "DragonColor",
-                    "=",
-                    "\"Blue\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "AttButton",
-                    "Animation",
-                    "=",
-                    "\"Blue\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Dragons",
-                    "Animation",
-                    "=",
-                    "\"Blue\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Bullet",
-                    "Animation",
-                    "=",
-                    "\"Blue\""
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "DragonColor",
-                    "=",
-                    "\"Gold\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "AttButton",
-                    "Animation",
-                    "=",
-                    "\"Gold\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Bullet",
-                    "Animation",
-                    "=",
-                    "\"Gold\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Dragons",
-                    "Animation",
-                    "=",
-                    "\"Gold\""
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "DragonColor",
-                    "=",
-                    "\"Green\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "AttButton",
-                    "Animation",
-                    "=",
-                    "\"Green\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Bullet",
-                    "Animation",
-                    "=",
-                    "\"Green\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Dragons",
-                    "Animation",
-                    "=",
-                    "\"Green\""
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "DragonColor",
-                    "=",
-                    "\"Purple\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "AttButton",
-                    "Animation",
-                    "=",
-                    "\"Purple\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Bullet",
-                    "Animation",
-                    "=",
-                    "\"Purple\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Dragons",
-                    "Animation",
-                    "=",
-                    "\"Purple\""
-                  ]
-                }
-              ]
-            },
-            {
-              "disabled": true,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "StringVariable"
-                  },
-                  "parameters": [
-                    "DragonColor",
-                    "=",
-                    "\"White\""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Bullet",
-                    "Animation",
-                    "=",
-                    "\"White\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "AttButton",
-                    "Animation",
-                    "=",
-                    "\"White\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
-                  },
-                  "parameters": [
-                    "Dragons",
-                    "Animation",
-                    "=",
-                    "\"White\""
-                  ]
-                }
-              ]
-            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
@@ -11250,7 +11355,7 @@
                   "parameters": [
                     "HealthBars",
                     "=",
-                    "Dragons.CenterX()",
+                    "Dragons.CenterX() + 10",
                     "=",
                     "Dragons.Y() - 10"
                   ]
@@ -11304,6 +11409,64 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Multiplayer::MultiplayerObjectBehavior::IsObjectOwnedByCurrentPlayer"
+                  },
+                  "parameters": [
+                    "DragonLvls",
+                    "MultiplayerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Multiplayer::MultiplayerObjectBehavior::IsObjectOwnedByCurrentPlayer"
+                  },
+                  "parameters": [
+                    "Dragons",
+                    "MultiplayerObject"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "DragonLvls",
+                    "=",
+                    "Dragons.X() + 10",
+                    "=",
+                    "Dragons.Y() - 10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "DragonNames",
+                    "Text",
+                    "=",
+                    "DragonName"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "DragonLvls",
+                    "=",
+                    "\"[b][outline=red]\"+CurrentLvl+\"[/outline][/b]\""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -11313,7 +11476,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Bullet",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11474,7 +11636,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Dragons",
               "conditions": [
@@ -11854,6 +12015,7 @@
               ]
             },
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -11933,6 +12095,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "MiniMap",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11990,6 +12153,135 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Exp",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::Value"
+                  },
+                  "parameters": [
+                    "GoldGreenExpBar",
+                    "=",
+                    "GoldGreenExpBar.MaxValue()",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLvl",
+                        "<",
+                        "MaxLevel"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLvl",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CurrentLvl",
+                        "!=",
+                        "MaxLevel"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                      },
+                      "parameters": [
+                        "GoldGreenExpBar",
+                        "=",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BlackDecoratedButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "GoldGreenExpBar",
+                "+",
+                "1",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "NewText",
+                "Text",
+                "=",
+                "\"[b][outline=red]\"+CurrentLvl+\"[/outline][/b]\""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -12003,7 +12295,7 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": true,
+          "isLocked": false,
           "name": "",
           "renderingType": "",
           "visibility": true,
@@ -12047,7 +12339,7 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": true,
+          "isLocked": false,
           "name": "Joystick Layer",
           "renderingType": "",
           "visibility": true,
@@ -12080,7 +12372,7 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": false,
+          "isLocked": true,
           "name": "MiniMap",
           "renderingType": "",
           "visibility": true,
