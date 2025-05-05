@@ -922,6 +922,38 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/e277b4eaf6ac17fafedb222c2900b817f1fe3018b42a46430d530f0df8d42b60_Flat Bar Orange Fill Bar.png",
           "name": "Flat Bar Orange Fill Bar.png"
         }
+      },
+      {
+        "file": "Diamond.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Diamond.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Diamond2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Diamond2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "DiamondSmall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DiamondSmall.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "DiamondSmall2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DiamondSmall2.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -5718,7 +5750,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8416428125373143,
+        "zoomFactor": 0.49508400737489133,
         "windowMask": false
       },
       "objectsGroups": [
@@ -5858,6 +5890,16 @@
         },
         {
           "name": "CurrentLvl",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "DiamondIntever",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "DiamondLinkageID",
           "type": "number",
           "value": 0
         }
@@ -7363,7 +7405,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Text",
+          "string": "NewText",
           "font": "",
           "textAlignment": "left",
           "characterSize": 62,
@@ -7386,7 +7428,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Text",
+            "text": "NewText",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -9138,7 +9180,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Text",
+          "string": "NewText2",
           "font": "",
           "textAlignment": "left",
           "characterSize": 62,
@@ -9161,7 +9203,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Text",
+            "text": "NewText2",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -10709,11 +10751,174 @@
             "align": "center",
             "wordWrap": true
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Diamond",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "DiamondSmallID",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "MultiplayerObject",
+              "type": "Multiplayer::MultiplayerObjectBehavior",
+              "playerNumber": 0,
+              "actionOnPlayerDisconnect": "DestroyObject"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Diamond2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 7,
+                            "y": 9
+                          },
+                          {
+                            "x": 66,
+                            "y": 9
+                          },
+                          {
+                            "x": 66,
+                            "y": 97
+                          },
+                          {
+                            "x": 7,
+                            "y": 97
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "DiamondSmall",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "ID",
+              "type": "number",
+              "value": 0
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "MultiplayerObject",
+              "type": "Multiplayer::MultiplayerObjectBehavior",
+              "playerNumber": 0,
+              "actionOnPlayerDisconnect": "DestroyObject"
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "DiamondSmall2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 2
+                          },
+                          {
+                            "x": 13,
+                            "y": 2
+                          },
+                          {
+                            "x": 13,
+                            "y": 20
+                          },
+                          {
+                            "x": 1,
+                            "y": 20
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
+          {
+            "folderName": "DragonLvls",
+            "children": [
+              {
+                "objectName": "DragonLvl4"
+              },
+              {
+                "objectName": "DragonLvl3"
+              },
+              {
+                "objectName": "DragonLvl2"
+              },
+              {
+                "objectName": "DragonLvl1"
+              }
+            ]
+          },
           {
             "folderName": "MiniDragons",
             "children": [
@@ -10786,6 +10991,9 @@
             "objectName": "Background"
           },
           {
+            "objectName": "Diamond"
+          },
+          {
             "objectName": "Timer"
           },
           {
@@ -10831,16 +11039,7 @@
             "objectName": "GoldGreenExpBar"
           },
           {
-            "objectName": "DragonLvl1"
-          },
-          {
-            "objectName": "DragonLvl2"
-          },
-          {
-            "objectName": "DragonLvl3"
-          },
-          {
-            "objectName": "DragonLvl4"
+            "objectName": "DiamondSmall"
           }
         ]
       },
@@ -10902,6 +11101,15 @@
                   "parameters": [
                     "",
                     "\"GameCountdown\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"DiamondTimer\""
                   ]
                 }
               ]
@@ -11167,6 +11375,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Dragon",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11476,6 +11685,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Bullet",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12095,7 +12305,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "MiniMap",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12164,6 +12373,12 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            },
+            {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12238,14 +12453,403 @@
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
+              "folded": true,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Diamond",
               "conditions": [],
-              "actions": []
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "DiamondSmall",
+                  "conditions": [],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::CompareNumbers"
+                          },
+                          "parameters": [
+                            "Diamond.DiamondSmallID",
+                            "=",
+                            "DiamondSmall.ID"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "LinkedObjects::LinkObjects"
+                          },
+                          "parameters": [
+                            "",
+                            "DiamondSmall",
+                            "Diamond"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"DiamondTimer\"",
+                    ">=",
+                    "DiamondIntever"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Multiplayer::IsPlayerHost"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"DiamondTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Diamond",
+                    "-100000",
+                    "-100000",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "Diamond",
+                    "=",
+                    "RandomInRange(Background.X(), Background.X()+Background.Width()-(Diamond.Width()*3))",
+                    "=",
+                    "RandomInRange(Background.Y(), Background.Y()+Background.Height()-(Diamond.Height()*3))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "DiamondSmall",
+                    "-10",
+                    "-10",
+                    "\"MiniMap\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "DiamondSmall",
+                    "=",
+                    "(Diamond.CenterX()-MapWidth)/10 + 10",
+                    "=",
+                    "(Diamond.CenterY()-MapHeight)/10 + 10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "DiamondLinkageID",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "DiamondSmall",
+                    "ID",
+                    "=",
+                    "DiamondLinkageID"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Diamond",
+                    "DiamondSmallID",
+                    "=",
+                    "DiamondLinkageID"
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "BlackDecoratedButton",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Multiplayer::IsPlayerHost"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Diamond",
+                    "-100000",
+                    "-100000",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "Diamond",
+                    "=",
+                    "RandomInRange(Background.X(), Background.X()+Background.Width()-(Diamond.Width()*3))",
+                    "=",
+                    "RandomInRange(Background.Y(), Background.Y()+Background.Height()-(Diamond.Height()*3))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "DiamondSmall",
+                    "-10",
+                    "-10",
+                    "\"MiniMap\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "DiamondSmall",
+                    "=",
+                    "(Diamond.CenterX()-MapWidth)/10 + 10",
+                    "=",
+                    "(Diamond.CenterY()-MapHeight)/10 + 10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "DiamondLinkageID",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "DiamondSmall",
+                    "ID",
+                    "=",
+                    "DiamondLinkageID"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Diamond",
+                    "DiamondSmallID",
+                    "=",
+                    "DiamondLinkageID"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Multiplayer::MultiplayerObjectBehavior::IsObjectOwnedByCurrentPlayer"
+                  },
+                  "parameters": [
+                    "Dragons",
+                    "MultiplayerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Dragons",
+                    "Diamond",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+                  },
+                  "parameters": [
+                    "Diamond",
+                    "MultiplayerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "LinkedObjects::PickObjectsLinkedTo"
+                  },
+                  "parameters": [
+                    "",
+                    "DiamondSmall",
+                    "Diamond",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+                  },
+                  "parameters": [
+                    "DiamondSmall",
+                    "MultiplayerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "DiamondSmall",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Diamond",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                  },
+                  "parameters": [
+                    "GoldGreenExpBar",
+                    "+",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "BlackDecoratedButton2",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "NewText2",
+                    "Text",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"testing\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "NewText",
+                    "Text",
+                    "=",
+                    ""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -12295,7 +12899,7 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": false,
+          "isLocked": true,
           "name": "",
           "renderingType": "",
           "visibility": true,
@@ -12339,7 +12943,7 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": false,
+          "isLocked": true,
           "name": "Joystick Layer",
           "renderingType": "",
           "visibility": true,
