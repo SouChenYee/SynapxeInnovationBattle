@@ -1371,12 +1371,17 @@
     {
       "name": "AttDamage",
       "type": "number",
-      "value": 20
+      "value": 10
+    },
+    {
+      "name": "AttDamageIncreaseByLvl",
+      "type": "number",
+      "value": 5
     },
     {
       "name": "Game1Countdown",
       "type": "number",
-      "value": 200
+      "value": 300
     },
     {
       "name": "MaxLevel",
@@ -6495,7 +6500,7 @@
           "persistentUuid": "82ae31c3-64e1-44e8-896f-eedfe72cdb20",
           "width": 854,
           "x": 247,
-          "y": 192,
+          "y": 180,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -9650,9 +9655,9 @@
           "textAlignment": "center",
           "characterSize": 45,
           "color": {
-            "b": 243,
-            "g": 255,
-            "r": 99
+            "b": 247,
+            "g": 110,
+            "r": 0
           },
           "content": {
             "bold": false,
@@ -9673,7 +9678,7 @@
             "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 45,
-            "color": "99;255;243"
+            "color": "0;110;247"
           }
         },
         {
@@ -11339,7 +11344,7 @@
             "BarRightPadding": 25,
             "BarBottomPadding": 5,
             "InitialValue": 0,
-            "MaxValue": 10,
+            "MaxValue": 5,
             "EasingDuration": 0
           },
           "childrenContent": {
@@ -13006,7 +13011,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Bullet",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13132,7 +13136,7 @@
                   "parameters": [
                     "Bullet",
                     "Dragons.MoveAngle",
-                    "400",
+                    "600",
                     "1"
                   ]
                 },
@@ -13356,6 +13360,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "GameEnd",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13895,7 +13900,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Exp",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13906,7 +13910,6 @@
               "actions": []
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -13946,6 +13949,16 @@
                         "CurrentLvl",
                         "+",
                         "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "AttDamage",
+                        "+",
+                        "AttDamageIncreaseByLvl"
                       ]
                     }
                   ]
@@ -14472,7 +14485,7 @@
           "defaultCameraBehavior": "do-nothing",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": false,
+          "isLocked": true,
           "name": "Joystick Layer",
           "renderingType": "",
           "visibility": true,
