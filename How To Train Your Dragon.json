@@ -842,7 +842,7 @@
       {
         "file": "assets/White.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/White.png\"}",
         "name": "White",
         "smoothed": true,
         "userAdded": false
@@ -1338,6 +1338,106 @@
         "name": "FlyingLightPurpleDinoWingUp Background Removed3.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Game1Background.jpeg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Game1Background.jpeg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "174711401037782122.jpeg",
+        "kind": "image",
+        "metadata": "",
+        "name": "174711401037782122.jpeg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "174711401037782100.jpeg",
+        "kind": "image",
+        "metadata": "",
+        "name": "174711401037782100.jpeg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "CollectExpwav.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "CollectExpwav.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Unknown.jpeg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Unknown.jpeg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Unknown1.jpeg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Unknown1.jpeg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Collect EXP.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Collect EXP.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Dragon Roar.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dragon Roar.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Game BGM.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Game BGM.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Victory Music.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Victory Music.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Lose Music.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Lose Music.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1371,7 +1471,7 @@
     {
       "name": "AttDamage",
       "type": "number",
-      "value": 10
+      "value": 20
     },
     {
       "name": "AttDamageIncreaseByLvl",
@@ -6104,7 +6204,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5468750000000032,
+        "zoomFactor": 0.31119749424452187,
         "windowMask": false
       },
       "objectsGroups": [
@@ -6479,56 +6579,6 @@
           "height": 0,
           "keepRatio": true,
           "layer": "Joystick Layer",
-          "name": "PopupBackground",
-          "persistentUuid": "208d3480-f154-446e-82b0-b36a4b8acc6f",
-          "width": 0,
-          "x": 247,
-          "y": 132,
-          "zOrder": 21,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1.0047058823529411,
-          "height": 39.1835294117647,
-          "keepRatio": true,
-          "layer": "Joystick Layer",
-          "name": "PopupMessage",
-          "persistentUuid": "82ae31c3-64e1-44e8-896f-eedfe72cdb20",
-          "width": 854,
-          "x": 247,
-          "y": 180,
-          "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 49.99999999999998,
-          "height": 66.66666666666663,
-          "keepRatio": true,
-          "layer": "Joystick Layer",
-          "name": "BackButton",
-          "persistentUuid": "133a1818-0bb4-43b0-9893-e64db6c65671",
-          "width": 200,
-          "x": 600,
-          "y": 445,
-          "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "Joystick Layer",
           "name": "Timer",
           "persistentUuid": "d6027664-9c17-4d0e-998a-a24176f8f27e",
           "width": 0,
@@ -6753,6 +6803,21 @@
       ],
       "objects": [
         {
+          "assetStoreId": "",
+          "name": "Pop_Up_Message",
+          "type": "How_to_Train_Your_Dragon::Pop_Up_Message",
+          "variables": [
+            {
+              "name": "Result",
+              "type": "boolean",
+              "value": false
+            }
+          ],
+          "effects": [],
+          "behaviors": [],
+          "content": {}
+        },
+        {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Background",
@@ -6772,7 +6837,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Game1Map.png",
+                      "image": "174711401037782122.jpeg",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6792,16 +6857,16 @@
                             "y": 0
                           },
                           {
-                            "x": 1000,
+                            "x": 1177,
                             "y": 0
                           },
                           {
-                            "x": 1000,
-                            "y": 1000
+                            "x": 1177,
+                            "y": 1149
                           },
                           {
                             "x": 0,
-                            "y": 1000
+                            "y": 1149
                           }
                         ]
                       ]
@@ -9580,108 +9645,6 @@
           }
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "PopupBackground",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Game1EndBack.webp",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 854,
-                            "y": 0
-                          },
-                          {
-                            "x": 854,
-                            "y": 480
-                          },
-                          {
-                            "x": 0,
-                            "y": 480
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "PopupMessage",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 45,
-          "color": {
-            "b": 247,
-            "g": 110,
-            "r": 0
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "",
-            "font": "",
-            "textAlignment": "center",
-            "verticalTextAlignment": "top",
-            "characterSize": 45,
-            "color": "0;110;247"
-          }
-        },
-        {
           "assetStoreId": "5f0df6131c9646dcbe98798196db5b6d806eb25564f86d2e119a084d1e20bf74",
           "name": "LeaderboardButton",
           "type": "PanelSpriteButton::PanelSpriteButton",
@@ -10037,7 +10000,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Game1Map2.png",
+                      "image": "174711401037782100.jpeg",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -10057,16 +10020,16 @@
                             "y": 0
                           },
                           {
-                            "x": 1000,
+                            "x": 1177,
                             "y": 0
                           },
                           {
-                            "x": 1000,
-                            "y": 1000
+                            "x": 1177,
+                            "y": 1149
                           },
                           {
                             "x": 0,
-                            "y": 1000
+                            "y": 1149
                           }
                         ]
                       ]
@@ -12336,12 +12299,6 @@
             "objectName": "BlackDecoratedButton2"
           },
           {
-            "objectName": "PopupBackground"
-          },
-          {
-            "objectName": "PopupMessage"
-          },
-          {
             "objectName": "LeaderboardButton"
           },
           {
@@ -12355,6 +12312,9 @@
           },
           {
             "objectName": "DiamondSmall"
+          },
+          {
+            "objectName": "Pop_Up_Message"
           }
         ]
       },
@@ -12614,6 +12574,28 @@
                 "=",
                 "ToString(Timer.CenterX())+\"*\"+ToString(Timer.CenterY())"
               ]
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "11"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Game BGM.wav",
+                "1",
+                "yes",
+                "5",
+                ""
+              ]
             }
           ],
           "events": [
@@ -12748,18 +12730,18 @@
                   "parameters": [
                     "Dragons",
                     "Joystick.StickAngle() + 90",
-                    "3000",
+                    "0",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "AddForceAL"
+                    "value": "AddForceXY"
                   },
                   "parameters": [
                     "Dragons",
-                    "Dragons.Angle()-90",
-                    "Joystick.StickForce() * 300",
+                    "Joystick.StickForceX() * 300",
+                    "Joystick.StickForceY() * 300",
                     ""
                   ]
                 },
@@ -12982,17 +12964,6 @@
                 },
                 {
                   "type": {
-                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                  },
-                  "parameters": [
-                    "DragonNames",
-                    "Text",
-                    "=",
-                    "DragonName"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "BBText::SetBBText"
                   },
                   "parameters": [
@@ -13011,6 +12982,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Bullet",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13148,6 +13120,18 @@
                     "",
                     "\"AttCD\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Dragon Roar.mp3",
+                    "",
+                    "10",
+                    ""
+                  ]
                 }
               ]
             },
@@ -13183,6 +13167,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Dragons",
               "conditions": [
@@ -13322,6 +13307,19 @@
           "parameters": []
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "CH - Removed because no need the Pop Up Elements anymore"
+        },
+        {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -13356,10 +13354,965 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BlackDecoratedButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "BackButton",
+                "ScreenWidth()/2",
+                "ScreenHeight()/2",
+                "\"Joystick Layer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::IsEmpty"
+              },
+              "parameters": [
+                "HealthBars",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::IsObjectOwnedByCurrentPlayer"
+              },
+              "parameters": [
+                "HealthBars",
+                "MultiplayerObject"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Multiplayer::LeaveGameLobby"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Pop_Up_Message",
+                "-1000",
+                "-1000",
+                "\"Joystick Layer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "Pop_Up_Message",
+                "=",
+                "SceneWindowWidth()/2",
+                "=",
+                "SceneWindowHeight()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "BackButton",
+                "-1000",
+                "-1000",
+                "\"Joystick Layer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "BackButton",
+                "=",
+                "Pop_Up_Message.CenterX()",
+                "=",
+                "Pop_Up_Message.Y()+Pop_Up_Message.Height()-50"
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"GameCountdown\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Pop_Up_Message",
+                "Result",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "How_to_Train_Your_Dragon::Pop_Up_Message::Setup"
+              },
+              "parameters": [
+                "Pop_Up_Message",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "BackButton",
+                "=",
+                "Pop_Up_Message.ZOrder()+1"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Pop_Up_Message",
+                    "Result",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BackButton",
+                    "\"Try Again\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Lose Music.wav",
+                    "",
+                    "10",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "GameCountdown",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Multiplayer::PlayersInLobbyCount"
+                  },
+                  "parameters": [
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::IsObjectOwnedByCurrentPlayer"
+              },
+              "parameters": [
+                "HealthBars",
+                "MultiplayerObject"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Multiplayer::LeaveGameLobby"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "StopSoundCanal"
+              },
+              "parameters": [
+                "",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Pop_Up_Message",
+                "-1000",
+                "-1000",
+                "\"Joystick Layer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "Pop_Up_Message",
+                "=",
+                "SceneWindowWidth()/2",
+                "=",
+                "SceneWindowHeight()/2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "BackButton",
+                "-1000",
+                "-1000",
+                "\"Joystick Layer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenter"
+              },
+              "parameters": [
+                "BackButton",
+                "=",
+                "Pop_Up_Message.CenterX()",
+                "=",
+                "Pop_Up_Message.Y()+Pop_Up_Message.Height()-50"
+              ]
+            },
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"GameCountdown\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanObjectVariable"
+              },
+              "parameters": [
+                "Pop_Up_Message",
+                "Result",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "How_to_Train_Your_Dragon::Pop_Up_Message::Setup"
+              },
+              "parameters": [
+                "Pop_Up_Message",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "BackButton",
+                "=",
+                "Pop_Up_Message.ZOrder()+1"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Pop_Up_Message",
+                    "Result",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BackButton",
+                    "\"Try Again\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Pop_Up_Message",
+                    "Result",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "BackButton",
+                    "\"Continue\"",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Victory Music.mp3",
+                    "",
+                    "10",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "disabled": true,
+          "name": "Game End",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "HP = 0"
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::IsEmpty"
+                  },
+                  "parameters": [
+                    "HealthBars",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "GameEnd",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Pop_Up_Message",
+                    "-1000",
+                    "-1000",
+                    "\"Joystick Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "BackButton",
+                    "-1000",
+                    "-1000",
+                    "\"Joystick Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "Pop_Up_Message",
+                    "=",
+                    "SceneWindowWidth()/2",
+                    "=",
+                    "SceneWindowHeight()/2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "BackButton",
+                    "=",
+                    "Pop_Up_Message.CenterX()",
+                    "=",
+                    "Pop_Up_Message.Y()+Pop_Up_Message.Height()-50"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Pop_Up_Message",
+                    "=",
+                    "MiniMapBG.ZOrder()+1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "Pop_Up_Message",
+                    "Result",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "How_to_Train_Your_Dragon::Pop_Up_Message::Setup"
+                  },
+                  "parameters": [
+                    "Pop_Up_Message",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"GameCountdown\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Lose Music.wav",
+                        "",
+                        "10",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                      },
+                      "parameters": [
+                        "BackButton",
+                        "\"Try Again\"",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Multiplayer::LeaveGameLobby"
+                      },
+                      "parameters": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Conditions for Game End"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "GameCountdown",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Multiplayer::PlayersInLobbyCount"
+                      },
+                      "parameters": [
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "GameEnd",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StopSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Pop_Up_Message",
+                    "-1000",
+                    "-1000",
+                    "\"Joystick Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "BackButton",
+                    "-1000",
+                    "-1000",
+                    "\"Joystick Layer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "Pop_Up_Message",
+                    "=",
+                    "SceneWindowWidth()/2",
+                    "=",
+                    "SceneWindowHeight()/2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCenter"
+                  },
+                  "parameters": [
+                    "BackButton",
+                    "=",
+                    "Pop_Up_Message.CenterX()",
+                    "=",
+                    "Pop_Up_Message.Y()+Pop_Up_Message.Height()-50"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PauseTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"GameCountdown\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Winner"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanObjectVariable"
+                      },
+                      "parameters": [
+                        "Pop_Up_Message",
+                        "Result",
+                        "True",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "How_to_Train_Your_Dragon::Pop_Up_Message::Setup"
+                      },
+                      "parameters": [
+                        "Pop_Up_Message",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "Victory Music.mp3",
+                        "",
+                        "10",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Winner"
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Pop_Up_Message",
+                "Result",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "BackButton",
+                "\"Continue\"",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "BackButton",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PopScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Multiplayer::LeaveGameLobby"
+                  },
+                  "parameters": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Loser"
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Pop_Up_Message",
+                "Result",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "BackButton",
+                "\"Try Again\"",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "BackButton",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PopScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Multiplayer::LeaveGameLobby"
+                  },
+                  "parameters": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+              },
+              "parameters": [
+                "BackButton",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PopScene"
+              },
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::LeaveGameLobby"
+              },
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": true,
           "folded": true,
           "name": "GameEnd",
           "source": "",
@@ -13900,6 +14853,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Exp",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13910,6 +14864,7 @@
               "actions": []
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -14336,10 +15291,23 @@
                     "1",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Collect EXP.wav",
+                    "",
+                    "20",
+                    ""
+                  ]
                 }
               ]
             },
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -14482,11 +15450,10 @@
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
           "cameraType": "",
-          "defaultCameraBehavior": "do-nothing",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": true,
-          "name": "Joystick Layer",
+          "name": "MiniMap",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
@@ -14516,10 +15483,11 @@
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
           "cameraType": "",
+          "defaultCameraBehavior": "do-nothing",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": true,
-          "name": "MiniMap",
+          "isLocked": false,
+          "name": "Joystick Layer",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
@@ -14584,6 +15552,369 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "category": "",
+      "extensionNamespace": "",
+      "fullName": "",
+      "gdevelopVersion": "",
+      "helpPath": "",
+      "iconUrl": "",
+      "name": "How_to_Train_Your_Dragon",
+      "previewIconUrl": "",
+      "shortDescription": "",
+      "version": "",
+      "description": "",
+      "tags": [],
+      "authorIds": [],
+      "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [],
+      "eventsBasedObjects": [
+        {
+          "areaMaxX": 854,
+          "areaMaxY": 480,
+          "areaMaxZ": 1,
+          "areaMinX": 0,
+          "areaMinY": 0,
+          "areaMinZ": 0,
+          "defaultName": "",
+          "description": "",
+          "fullName": "",
+          "isUsingLegacyInstancesRenderer": false,
+          "name": "Pop_Up_Message",
+          "eventsFunctions": [
+            {
+              "description": "Setup the Pop Up Screen based on Game Result",
+              "fullName": "Pop Up Setup",
+              "functionType": "Action",
+              "name": "Setup",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Result",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "PopupMessage",
+                        "Text",
+                        "=",
+                        "\"Congratulations\"+\"\n\"+\"You are the winner to rescue the princess!\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "PopupBackground",
+                        "Animation",
+                        "=",
+                        "\"Win\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Result",
+                        "False"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "PopupMessage",
+                        "Text",
+                        "=",
+                        "\"Defeated\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "PopupBackground",
+                        "Animation",
+                        "=",
+                        "\"Lose\""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "How_to_Train_Your_Dragon::Pop_Up_Message",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [],
+          "objects": [
+            {
+              "assetStoreId": "",
+              "bold": false,
+              "italic": false,
+              "name": "PopupMessage",
+              "smoothed": true,
+              "type": "TextObject::Text",
+              "underlined": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "string": "Defeated111",
+              "font": "",
+              "textAlignment": "center",
+              "characterSize": 45,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              },
+              "content": {
+                "bold": false,
+                "isOutlineEnabled": false,
+                "isShadowEnabled": true,
+                "italic": false,
+                "outlineColor": "255;255;255",
+                "outlineThickness": 2,
+                "shadowAngle": 90,
+                "shadowBlurRadius": 2,
+                "shadowColor": "0;0;0",
+                "shadowDistance": 4,
+                "shadowOpacity": 127,
+                "smoothed": true,
+                "underlined": false,
+                "text": "Defeated111",
+                "font": "",
+                "textAlignment": "center",
+                "verticalTextAlignment": "center",
+                "characterSize": 45,
+                "color": "255;255;255"
+              }
+            },
+            {
+              "adaptCollisionMaskAutomatically": true,
+              "assetStoreId": "",
+              "name": "PopupBackground",
+              "type": "Sprite",
+              "updateIfNotVisible": false,
+              "variables": [],
+              "effects": [],
+              "behaviors": [],
+              "animations": [
+                {
+                  "name": "Lose",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "Unknown1.jpeg",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 0
+                              },
+                              {
+                                "x": 854,
+                                "y": 0
+                              },
+                              {
+                                "x": 854,
+                                "y": 480
+                              },
+                              {
+                                "x": 0,
+                                "y": 480
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Win",
+                  "useMultipleDirections": false,
+                  "directions": [
+                    {
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": true,
+                          "image": "Unknown.jpeg",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": [
+                            [
+                              {
+                                "x": 0,
+                                "y": 0
+                              },
+                              {
+                                "x": 854,
+                                "y": 0
+                              },
+                              {
+                                "x": 854,
+                                "y": 480
+                              },
+                              {
+                                "x": 0,
+                                "y": 480
+                              }
+                            ]
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "PopupBackground"
+              },
+              {
+                "objectName": "PopupMessage"
+              }
+            ]
+          },
+          "objectsGroups": [],
+          "layers": [
+            {
+              "ambientLightColorB": 200,
+              "ambientLightColorG": 200,
+              "ambientLightColorR": 200,
+              "camera3DFarPlaneDistance": 10000,
+              "camera3DFieldOfView": 45,
+              "camera3DNearPlaneDistance": 3,
+              "cameraType": "",
+              "followBaseLayerCamera": false,
+              "isLightingLayer": false,
+              "isLocked": false,
+              "name": "",
+              "renderingType": "",
+              "visibility": true,
+              "cameras": [
+                {
+                  "defaultSize": true,
+                  "defaultViewport": true,
+                  "height": 0,
+                  "viewportBottom": 1,
+                  "viewportLeft": 0,
+                  "viewportRight": 1,
+                  "viewportTop": 0,
+                  "width": 0
+                }
+              ],
+              "effects": []
+            }
+          ],
+          "instances": [
+            {
+              "angle": 0,
+              "customSize": false,
+              "height": 0,
+              "keepRatio": true,
+              "layer": "",
+              "name": "PopupBackground",
+              "persistentUuid": "d983c096-ee17-4798-a524-1408d7a53937",
+              "width": 0,
+              "x": 0,
+              "y": 0,
+              "zOrder": 21,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            },
+            {
+              "angle": 0,
+              "customSize": true,
+              "depth": 1.0047058823529411,
+              "height": 100,
+              "layer": "",
+              "name": "PopupMessage",
+              "persistentUuid": "95ba0127-cb30-4707-b7d8-4a13dd0d425e",
+              "width": 854,
+              "x": 0,
+              "y": 50,
+              "zOrder": 22,
+              "numberProperties": [],
+              "stringProperties": [],
+              "initialVariables": []
+            }
+          ]
+        }
+      ]
+    },
     {
       "author": "",
       "category": "Input",
