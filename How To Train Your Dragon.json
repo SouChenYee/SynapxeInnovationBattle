@@ -1438,6 +1438,16 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "Dragon_Tamer - The Proving Grounds.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Dragon_Tamer - The Proving Grounds.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1481,7 +1491,7 @@
     {
       "name": "Game1Countdown",
       "type": "number",
-      "value": 300
+      "value": 120
     },
     {
       "name": "MaxLevel",
@@ -4405,7 +4415,7 @@
               },
               "parameters": [
                 "",
-                "5bf6889c0b81a767e32df186cf8b43e85b322048528a39cdc33512c30b5336e5_26 - super scary cave dragon.aac",
+                "Dragon_Tamer - The Proving Grounds.mp3",
                 "11",
                 "yes",
                 "0",
@@ -12324,7 +12334,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Timer",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -12366,7 +12375,7 @@
                   "parameters": [
                     "Timer",
                     "=",
-                    "ScreenWidth()/2"
+                    "SceneWindowWidth()/2"
                   ]
                 },
                 {
@@ -12502,7 +12511,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -12550,7 +12558,7 @@
               "parameters": [
                 "GoldGreenExpBar",
                 "=",
-                "ScreenWidth()/2"
+                "SceneWindowWidth()/2"
               ]
             },
             {
@@ -14853,7 +14861,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Exp",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
